@@ -42,20 +42,44 @@ body{
     padding: 2rem;
 }
 
-/* NAV-BAR-LEFT */
+/* NAV-BAR*/
 main{
     display: flex;
     width: 100%;
     height: calc(100vh - 100px);
 }
-#navbar{
-    width: 200px;
+#nav-bar{
+    width: 50px;
     height: 100%;
     background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
+#nav-bar .logo-mb,
+.logo-home,
+.search-logo,
+.user-logo{
+    width: 45px;
+    padding: 0.5rem;
+}
+
+.book-logo{
+    width: 45px;
+    padding:0.5rem;
+    flex-grow: 1;
+}
+
+.download-logo{
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 #content{
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     height: 100%;
     background-color: #141922;
 }
@@ -64,6 +88,17 @@ main{
     height: 100px;
     width: 100%;
     background-color: #080b12;
+}
+
+ #top h4{
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    right: 20;
+    border-radius: 23px;
+    top: 20;
+    padding: 15px 10px; 
+    font-size: 13px;
 }
 
 
